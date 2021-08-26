@@ -52,7 +52,10 @@ export abstract class Fetcher {
             }
             return decimals
           })
-    return new Token(chainId, address, parsedDecimals, symbol, name)
+    name = await new Contract(address, ERC20, provider).name()
+    symbol = await new Contract(address, ERC20, provider).symbol()
+
+    return new Token(chainId, address, parsedDecimals, name, symbol)
   }
 
   /**
