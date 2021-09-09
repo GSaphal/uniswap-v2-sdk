@@ -8,21 +8,21 @@ export enum ChainId {
   ROPSTEN = 3,
   RINKEBY = 4,
   GÖRLI = 5,
-  KOVAN = 42,
+  KOVAN = 42
 }
 
 export enum TradeType {
   EXACT_INPUT,
-  EXACT_OUTPUT,
+  EXACT_OUTPUT
 }
 
 export enum Rounding {
   ROUND_DOWN,
   ROUND_HALF_UP,
-  ROUND_UP,
+  ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0x49d694BCeAb0d629fF94994Fa09eD7aA0f6A912F'
+export const FACTORY_ADDRESS = '0x02c4c333e0964afc09d750c8057788c1f83d92c5'
 
 export const INIT_CODE_HASH = '0xa66f5bc4fb3bfdf9ea8983f3b64390dfc0462677d789e48d5150344fd15f1137'
 
@@ -41,10 +41,10 @@ export const _1000 = JSBI.BigInt(1000)
 
 export enum SolidityType {
   uint8 = 'uint8',
-  uint256 = 'uint256',
+  uint256 = 'uint256'
 }
 
 export const SOLIDITY_TYPE_MAXIMA = {
   [SolidityType.uint8]: JSBI.BigInt('0xff'),
-  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'),
+  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff')
 }
